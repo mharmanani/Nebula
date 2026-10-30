@@ -1,0 +1,13 @@
+# Copy to configs/paths.yaml (git-ignored) and point it to your own files. Nothing here is distributed.
+weights:                       # one checkpoint per specialist (no weights are released; see docs/tools.md)
+  microsegnet: null            # null = the public MicroSegNet prostate weights (Hugging Face Hub)
+  needlenet: /path/to/needlenet.pth
+  prostnfound: /path/to/prostnfound_plus.pth
+  dinov3: /path/to/dinov3_head.pth
+  compass: /path/to/compass.pth
+cohort: /path/to/cohort        # your cases, laid out as in docs/data_format.md
+context: /path/to/context      # written by scripts/build_context.py
+coordinator:                   # local folders (or Hugging Face ids) of the coordinator models
+  qwen: Qwen/Qwen3.6-27B
+  gpt-oss: openai/gpt-oss-20b
+  mistral: mistralai/Mistral-Small-3.2-24B-Instruct-2506

@@ -1,0 +1,17 @@
+# Versions the paper's results were produced with (Python 3.11).
+torch==2.7.1
+torchvision==0.22.1
+transformers>=4.57          # coordinator (Qwen3.6-27B, gpt-oss-20b, Mistral-Small-3.2) and Compass's BERT aggregator; the paper used a 5.x source build
+accelerate==1.14.0
+tabpfn==8.0.3               # TabPFN-3 composer
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.15.1
+scikit-learn==1.8.0
+scikit-image==0.26.0
+pillow==11.1.0
+pyyaml==6.0.3
+huggingface_hub>=0.34       # public MicroSegNet weights
+ml_collections==1.1.0       # MicroSegNet / NeedleNet network config
+dinov3 @ git+https://github.com/facebookresearch/dinov3@54694f7627fd815f62a5dcc82944ffa6153bbb76
+pytest                      # tests only

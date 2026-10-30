@@ -1,0 +1,22 @@
+# no data, weights or outputs in this repository
+weights/
+checkpoints/
+outputs/
+logs/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.npz
+*.npy
+*.h5
+*.csv
+*.png
+*.jpg
+configs/paths.yaml
+__pycache__/
+*.pyc
+.pytest_cache/
+!docs/*.png
+!.img/*.png
+.DS_Store
